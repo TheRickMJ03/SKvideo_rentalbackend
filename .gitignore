@@ -1,0 +1,22 @@
+# Virtual environment
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+
+
+
+# Database files (optional, if you don’t want to track local DB)
+*.db
+#db config 
+config.py
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
