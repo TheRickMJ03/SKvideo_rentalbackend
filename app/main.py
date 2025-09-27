@@ -2,11 +2,13 @@ from flask import Flask
 from app.routes.films import films_bp   
 from app.routes.actor import actor_bp
 from app.routes.customers import customer_bp
+from flask_cors import CORS
 
 
 def create_app():
     app = Flask(__name__)
     
+    CORS(app) 
     # register routes
     app.register_blueprint(films_bp)
     app.register_blueprint(actor_bp)
